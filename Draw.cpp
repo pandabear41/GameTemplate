@@ -8,6 +8,11 @@ Draw::Draw() {
 Draw::~Draw() {
 }
 
+void Draw::filledRect(SDL_Surface* surface, int x, int y, int w, int h, int color) {
+    SDL_Rect rect = {x,y,w,h};
+    SDL_FillRect(surface, &rect, color);
+}
+
 
 /**
 * Write Text on screen.
@@ -36,3 +41,6 @@ void Draw::text(SDL_Surface* surface, const string text, SDL_Color color,
     TTF_CloseFont(font);
 
 }
+
+
+

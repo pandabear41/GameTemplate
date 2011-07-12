@@ -11,14 +11,13 @@ public:
 	virtual ~IntroState();
 
 	void draw(SDL_Surface* surface);
+	void clockTick();
 	void keyPressed(SDLKey key);
 
 private:
-	/**
-	 * Scroll map list
-	 */
-	int scrollOffset;
-
+    int textAlpha;
+    bool forward;
+    int tickCount;
 };
 
 #endif // INTROSTATE_H_INCLUDED

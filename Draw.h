@@ -21,6 +21,8 @@ public:
     SDL_Color color, const int x = 0, const int y = 0, const int size =
     30, const int alpha = 255);
 
+    static void filledRect(SDL_Surface* surface, int x, int y, int w, int h, int color=0xFFFFFF);
+
 };
 
 

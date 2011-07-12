@@ -81,12 +81,12 @@ void GameEngine::loop() {
 
             switch (event.type) {
                 case SDL_QUIT:
-                this->done = true;
-                break;
+                    this->done = true;
+                    break;
 
-            case SDL_KEYDOWN:
-                this->state->keyPressed(event.key.keysym.sym);
-                break;
+                case SDL_KEYDOWN:
+                    this->state->keyPressed(event.key.keysym.sym);
+                    break;
 
         }
     }
