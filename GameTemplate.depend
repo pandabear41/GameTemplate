@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1310437288 source:/home/chris/GameTemplate/AbstractGameState.cpp
+	"AbstractGameState.h"
+
+1310437462 /home/chris/GameTemplate/AbstractGameState.h
+	<string>
+	<sstream>
+	<SDL/SDL.h>
+	<SDL/SDL_ttf.h>
+
+1310437288 source:/home/chris/GameTemplate/Draw.cpp
+	"Draw.h"
+
+1310437481 /home/chris/GameTemplate/Draw.h
+	<SDL/SDL.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_gfxPrimitives.h>
+	<string>
+	"Setting.h"
+
+1310437288 /home/chris/GameTemplate/Setting.h
+	<string>
+
+1310437288 source:/home/chris/GameTemplate/GameEngine.cpp
+	"GameEngine.h"
+
+1310437288 /home/chris/GameTemplate/GameEngine.h
+	"AbstractGameState.h"
+
+1310437423 source:/home/chris/GameTemplate/IntroState.cpp
+	"IntroState.h"
+
+1310437423 /home/chris/GameTemplate/IntroState.h
+	"AbstractGameState.h"
+	"GameEngine.h"
+	"Draw.h"
+
+1310437288 source:/home/chris/GameTemplate/Setting.cpp
+	"Setting.h"
+
+1310437423 source:/home/chris/GameTemplate/main.cpp
+	<time.h>
+	"GameEngine.h"
+	"IntroState.h"
+
