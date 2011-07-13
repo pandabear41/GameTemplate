@@ -1,12 +1,10 @@
 #ifndef GAMESTATE_H_INCLUDED
 #define GAMESTATE_H_INCLUDED
 
-
-#include <SDL/SDL_gfxPrimitives.h>
-
 #include "AbstractGameState.h"
 #include "GameEngine.h"
 #include "Draw.h"
+
 
 class GameState: public AbstractGameState {
 public:
@@ -19,6 +17,10 @@ public:
 
 private:
     int tickCount;
+    int score;
+    int lives;
+    SDL_Surface* balls;
+;
 };
 
 

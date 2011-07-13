@@ -7,24 +7,17 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\GameTemplate" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/GameTemplate" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
-				<Linker>
-					<Add library="C:\SDL\lib\libgfx.dll.a" />
-					<Add library="C:\SDL\lib\libSDL.dll.a" />
-					<Add library="C:\SDL\lib\libSDLmain.a" />
-					<Add library="C:\SDL\lib\SDL_mixer.lib" />
-					<Add library="C:\SDL\lib\SDL_ttf.lib" />
-				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\GameTemplate" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/GameTemplate" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -32,42 +25,41 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="C:\SDL\lib\libgfx.dll.a" />
-					<Add library="C:\SDL\lib\libSDL.dll.a" />
-					<Add library="C:\SDL\lib\libSDLmain.a" />
-					<Add library="C:\SDL\lib\SDL_mixer.lib" />
-					<Add library="C:\SDL\lib\SDL_ttf.lib" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="C:\SDL\include" />
+			<Add option="`sdl-config --cflags`" />
 		</Compiler>
 		<Linker>
-			<Add library="mingw32" />
-			<Add library="SDLmain" />
-			<Add library="SDL.dll" />
-			<Add library="user32" />
-			<Add library="gdi32" />
-			<Add library="winmm" />
-			<Add library="dxguid" />
-			<Add directory="C:\SDL\lib" />
+			<Add option="-lSDL -lSDL_ttf" />
 		</Linker>
 		<Unit filename="AbstractGameState.cpp" />
 		<Unit filename="AbstractGameState.h" />
+		<Unit filename="Animation.cpp" />
+		<Unit filename="Animation.h" />
+		<Unit filename="Camera.cpp" />
+		<Unit filename="Camera.h" />
 		<Unit filename="Draw.cpp" />
 		<Unit filename="Draw.h" />
+		<Unit filename="Entity.cpp" />
+		<Unit filename="Entity.h" />
 		<Unit filename="GameEngine.cpp" />
 		<Unit filename="GameEngine.h" />
+		<Unit filename="GameState.cpp" />
+		<Unit filename="GameState.h" />
+		<Unit filename="IntroState.cpp" />
+		<Unit filename="IntroState.h" />
 		<Unit filename="Setting.cpp" />
 		<Unit filename="Setting.h" />
+		<Unit filename="Tile.cpp" />
+		<Unit filename="Tile.h" />
+		<Unit filename="cb.bmp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
-			<envvars />
 			<debugger />
-			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

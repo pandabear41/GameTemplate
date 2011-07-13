@@ -1,6 +1,8 @@
+
+#include <iostream>
 #include "IntroState.h"
 #include "GameState.h"
-#include <iostream>
+
 using namespace std;
 
 IntroState::IntroState() {
@@ -45,9 +47,9 @@ void IntroState::draw(SDL_Surface* surface) {
 	SDL_Color color = { 255, 255, 255, 0 };
 
 	// Print out menu
-	Draw::text(surface, "Breakout", color, 160-80, 15, 40, 255);
-    Draw::text(surface, "Press Any Button", color, 160-120, 160, 30, this->textAlpha);
-    Draw::text(surface, "To Start", color, 160-60, 190, 30, this->textAlpha);
+	Draw::drawText(surface, "Breakout", color, 160-75, 15, 40, 255);
+    Draw::drawText(surface, "Press Any Button", color, 160-100, 160, 28, this->textAlpha);
+    Draw::drawText(surface, "To Start", color, 160-50, 190, 28, this->textAlpha);
 
 }
 

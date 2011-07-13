@@ -28,6 +28,9 @@ GameEngine::GameEngine(const int width, const int height, const bool fullscreen)
     // Initiate font
     TTF_Init();
 
+    int imgFlags=IMG_INIT_JPG|IMG_INIT_PNG;
+    IMG_Init(imgFlags);
+
     this->state = NULL;
     this->tickInterval = 20;
 }
